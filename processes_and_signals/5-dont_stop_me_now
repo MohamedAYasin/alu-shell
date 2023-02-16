@@ -9,6 +9,6 @@ id=$(pgrep "bash ./5-dont_stop_me_now" -f)
 # Terminate the infinate process
 if [ -n "$id" ]
 then
-  kill -15 "$id"
+	kill -15 "$id"
 fi
 
