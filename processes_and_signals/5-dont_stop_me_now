@@ -4,7 +4,7 @@
 
 
 # Get the program pid
-id=$(pgrep "bash ./5-dont_stop_me_now" -f)
+id=$(pgrep "bash ./4-to_infinity_and_beyond" -f)
 
 # Terminate the infinate process
 if [ -n "$id" ]
