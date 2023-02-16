@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Write a Bash script that stops 4-to_infinity_and_beyond process
+# You must use kill.
+
+
+# Get the program pid
+id=$(pgrep "bash ./5-dont_stop_me_now" -f)
+
+# Terminate the infinate process
+if [ -n "$id" ]
+then
+  kill -15 "$id"
+fi
+
